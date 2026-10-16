@@ -8,3 +8,7 @@
 - O jogo chegou ao menu principal no Linux em validação anterior. O teste externo de gameplay em Windows nativo e o login Microsoft com aplicativo de produção continuam pendentes. Wine e respostas simuladas de autenticação não substituem esses testes.
 
 Os instaladores contêm imagens e Python. Java, Minecraft, Fabric e o modpack são instalados na etapa de preparação. Os hashes dos arquivos públicos deste Release estão em `SHA256SUMS.txt`. O arquivo privado de fontes não faz parte dos assets publicados.
+
+## Atualização do modpack 1.0.2
+
+Essential e os botões correspondentes foram removidos. O atualizador foi executado sobre uma cópia dos 1.926 arquivos anteriores: removeu o mod, aplicou os dois menus novos, verificou os 1.925 hashes restantes e preservou um save. Apenas um pacote de configurações foi baixado; nenhum mod inalterado precisou ser transferido novamente. Os assets anteriores continuam necessários para os arquivos reutilizados.

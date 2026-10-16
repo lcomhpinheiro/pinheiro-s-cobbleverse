@@ -14,7 +14,7 @@ Ao concluir, clique **Abrir launcher**. O programa fica em **Cobbleverse Launche
 
 Preferências ficam em `.cobbleverse-settings`, na pasta do jogo. A reinstalação preserva essas preferências e os mundos. Depois de instalar, a pasta extraída do instalador pode ser removida. Para testar somente a interface, digite **↑ ↑ ↓ ↓ ← → ← → B A Enter**, avance normalmente e clique **Testar launcher**; a faixa MODO VISUAL identifica a simulação.
 
-O perfil local atende mundos locais e servidores que aceitam contas offline. Serviços do Essential que exigem autenticação ficam desativados nesse perfil. O login Microsoft real ainda depende do registro e da aprovação do aplicativo pelo responsável.
+O perfil local atende mundos locais e servidores que aceitam contas offline. O modpack 1.0.2 não contém o Essential. O login Microsoft real ainda depende do registro e da aprovação do aplicativo pelo responsável.
 
 ## Atualizações do modpack
 
@@ -26,7 +26,7 @@ https://github.com/lcomhpinheiro/pinheiro-s-cobbleverse/releases/latest/download
 
 Cada Release mais recente precisa incluir `manifest.json`. Os arquivos `f-*` e `b-*` são baixados e verificados automaticamente; não precisam ser baixados à mão. Arquivos inalterados podem ser reutilizados de versões anteriores. Por isso, mantenha os Releases antigos cujos arquivos ainda são referenciados.
 
-Os instaladores 1.4.0 mantêm o modpack 1.0.1: esta versão altera os aplicativos e reaproveita os assets existentes. Uma atualização somente de configurações não exige baixar os mods novamente. A política `merge` preserva alterações pessoais; `replace` substitui o arquivo inteiro; `seed` instala apenas se ele não existe. Saves não fazem parte da atualização.
+Os instaladores 1.4.0 recebem o modpack mais recente pelo canal acima. O modpack 1.0.2 remove o Essential e seus botões dos menus; não é necessário baixar outro instalador. Uma atualização somente de configurações não exige baixar os mods novamente. A política `merge` preserva alterações pessoais; `replace` substitui o arquivo inteiro; `seed` instala apenas se ele não existe. Saves não fazem parte da atualização.
 
 Uma atualização do modpack não substitui o programa launcher. Os links dos instaladores acima apontam para a versão específica e continuam válidos quando um novo modpack for publicado.
 
