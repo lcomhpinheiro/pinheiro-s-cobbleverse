@@ -1,35 +1,37 @@
-# Pinheiro's Cobbleverse
+# Pinheiro’s Cobbleverse
 
-Distribuição do modpack e dos launchers para Windows x64 e Linux x64.
+Instalador e launcher do modpack para Windows x64 e Linux x64.
 
-## Baixar o launcher
+## Baixar o instalador 1.4.0
 
-- [Windows 10/11 x64](https://github.com/lcomhpinheiro/pinheiro-s-cobbleverse/releases/download/modpack-1.0.1/CobbleverseLauncher-Windows-x64.zip)
-- [Linux x64](https://github.com/lcomhpinheiro/pinheiro-s-cobbleverse/releases/download/modpack-1.0.1/CobbleverseLauncher-Linux-x64.tar.gz)
-- [Versões e novidades](https://github.com/lcomhpinheiro/pinheiro-s-cobbleverse/releases)
+- [Windows 10/11 x64](https://github.com/lcomhpinheiro/pinheiro-s-cobbleverse/releases/download/launcher-1.4.0/CobbleverseInstaller-Windows-x64.zip)
+- [Linux x64](https://github.com/lcomhpinheiro/pinheiro-s-cobbleverse/releases/download/launcher-1.4.0/CobbleverseInstaller-Linux-x64.tar.gz)
+- [Todas as versões](https://github.com/lcomhpinheiro/pinheiro-s-cobbleverse/releases)
 
-Extraia a pasta inteira e abra `CobbleverseLauncher.exe` no Windows ou `./CobbleverseLauncher` no Linux. Clique **Canal oficial**, escolha a memória disponível e use **Instalar / atualizar**. O launcher instala Minecraft 1.21.1, Fabric 0.19.5, Java e o modpack. A primeira instalação precisa de internet.
+Extraia o pacote inteiro. No Windows, abra **CobbleverseInstaller.exe**; no Linux, execute **Instalar Cobbleverse**. Avance pelos botões Começar/Próximo, escolha o perfil e a pasta e instale. A lista lateral apenas indica o andamento. A primeira instalação precisa de internet; Python e Java não precisam ser instalados manualmente.
 
-O perfil local atende mundos locais e servidores que aceitam contas offline. O login Microsoft exige aplicativo Microsoft autorizado; ainda não há Client ID de produção configurado nesta versão. Serviços do Essential que dependem da conta oficial ficam desativados no perfil local.
+Ao concluir, clique **Abrir launcher**. O programa fica em **Cobbleverse Launcher**, dentro da pasta escolhida, com um atalho **Jogar Cobbleverse**. Nas próximas vezes, abra esse atalho: a tela diária contém nome, Play e imagens. A engrenagem no canto superior esquerdo abre memória alocada, Java automático/personalizado, pasta do jogo e opções de conta e atualização.
 
-## Atualizações
+Preferências ficam em `.cobbleverse-settings`, na pasta do jogo. A reinstalação preserva essas preferências e os mundos. Depois de instalar, a pasta extraída do instalador pode ser removida. Para testar somente a interface, digite **↑ ↑ ↓ ↓ ← → ← → B A Enter**, avance normalmente e clique **Testar launcher**; a faixa MODO VISUAL identifica a simulação.
 
-O canal estável é:
+O perfil local atende mundos locais e servidores que aceitam contas offline. Serviços do Essential que exigem autenticação ficam desativados nesse perfil. O login Microsoft real ainda depende do registro e da aprovação do aplicativo pelo responsável.
+
+## Atualizações do modpack
+
+O endereço estável já vem configurado:
 
 ```text
 https://github.com/lcomhpinheiro/pinheiro-s-cobbleverse/releases/latest/download/manifest.json
 ```
 
-Os arquivos `f-*` e `b-*` dos Releases são baixados automaticamente pelo launcher. Não precisam ser baixados à mão. Os hashes SHA-256 são verificados antes da instalação.
+Cada Release mais recente precisa incluir `manifest.json`. Os arquivos `f-*` e `b-*` são baixados e verificados automaticamente; não precisam ser baixados à mão. Arquivos inalterados podem ser reutilizados de versões anteriores. Por isso, mantenha os Releases antigos cujos arquivos ainda são referenciados.
 
-O inventário do modpack é completo em cada versão, mas arquivos e pacotes inalterados continuam sendo reutilizados das versões anteriores. Uma versão que muda só configurações não exige baixar novamente os mods. Configurações personalizadas são preservadas quando a política é `merge`; `replace` substitui o arquivo inteiro; `seed` só instala quando o arquivo não existe. Saves não fazem parte da atualização.
+Os instaladores 1.4.0 mantêm o modpack 1.0.1: esta versão altera os aplicativos e reaproveita os assets existentes. Uma atualização somente de configurações não exige baixar os mods novamente. A política `merge` preserva alterações pessoais; `replace` substitui o arquivo inteiro; `seed` instala apenas se ele não existe. Saves não fazem parte da atualização.
+
+Uma atualização do modpack não substitui o programa launcher. Os links dos instaladores acima apontam para a versão específica e continuam válidos quando um novo modpack for publicado.
 
 ## Validação e ajuda
 
-A distribuição HTTPS foi validada com uma instalação limpa dos 1.926 arquivos, sem autenticação GitHub. Veja [VALIDACAO.md](VALIDACAO.md).
+**54 testes passaram no Linux e no Python de Windows via Wine.** Os dois pacotes compilados foram testados também copiando o runtime e o aplicativo para uma pasta nova e abrindo o launcher instalado. O modpack já foi executado até o menu principal no Linux. O teste de gameplay em Windows nativo ainda depende de validação externa. Veja [VALIDACAO.md](VALIDACAO.md) e [TESTE-WINDOWS.md](TESTE-WINDOWS.md).
 
-Linux: execução até o menu principal. Windows: interface e instalação testadas sob Wine; a execução do jogo em Windows nativo ainda aguarda teste externo. Consulte [TESTE-WINDOWS.md](TESTE-WINDOWS.md).
-
-Se houver falha, o botão **Abrir pasta** mostra a instalação. Os logs ficam em `logs/launcher-game.log` e `logs/latest.log`. Não envie arquivos de contas nem saves ao relatar problemas.
-
-Este repositório contém a distribuição pública. Credenciais de publicação e código de desenvolvimento não fazem parte dos arquivos enviados aos jogadores.
+Se houver falha, abra a engrenagem e use **Abrir pasta do jogo**. Os logs ficam em `logs/launcher-game.log` e `logs/latest.log`. Não compartilhe credenciais nem saves. A distribuição contém os programas compilados; a cópia privada de fontes do administrador não é publicada aqui.
