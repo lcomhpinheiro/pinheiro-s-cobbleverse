@@ -2,36 +2,42 @@
 
 Instalador e launcher do modpack para Windows x64 e Linux x64.
 
-## Baixar o instalador 1.4.0
+## Baixar o instalador 1.7.0
 
-- [Windows 10/11 x64](https://github.com/lcomhpinheiro/pinheiro-s-cobbleverse/releases/download/launcher-1.4.0/CobbleverseInstaller-Windows-x64.zip)
-- [Linux x64](https://github.com/lcomhpinheiro/pinheiro-s-cobbleverse/releases/download/launcher-1.4.0/CobbleverseInstaller-Linux-x64.tar.gz)
+- [Windows 10/11 x64 — instalador EXE único](https://github.com/lcomhpinheiro/pinheiro-s-cobbleverse/releases/download/launcher-1.7.0/CobbleverseSetup-Windows-x64.exe)
+- [Linux x64](https://github.com/lcomhpinheiro/pinheiro-s-cobbleverse/releases/download/launcher-1.7.0/CobbleverseInstaller-Linux-x64.tar.gz)
 - [Todas as versões](https://github.com/lcomhpinheiro/pinheiro-s-cobbleverse/releases)
 
-Extraia o pacote inteiro. No Windows, abra **CobbleverseInstaller.exe**; no Linux, execute **Instalar Cobbleverse**. Avance pelos botões Começar/Próximo, escolha o perfil e a pasta e instale. A lista lateral apenas indica o andamento. A primeira instalação precisa de internet; Python e Java não precisam ser instalados manualmente.
+No Windows, execute o EXE diretamente, sem extrair ZIP ou usar BAT/CMD. No Linux, extraia o pacote e execute **Instalar Cobbleverse**. Escolha seu nome e a pasta e clique **Instalar agora**: a preparação começa automaticamente, mostra progresso de 0% a 100% e avança ao concluir. A primeira instalação precisa de internet. Python e Java são fornecidos pelo instalador.
 
-Ao concluir, clique **Abrir launcher**. O programa fica em **Cobbleverse Launcher**, dentro da pasta escolhida, com um atalho **Jogar Cobbleverse**. Nas próximas vezes, abra esse atalho: a tela diária contém nome, Play e imagens. A engrenagem no canto superior esquerdo abre memória alocada, Java automático/personalizado, pasta do jogo e opções de conta e atualização.
+Ao concluir, clique **Abrir launcher**. Nas próximas vezes, abra **Jogar Cobbleverse**, na pasta escolhida, ou o atalho na área de trabalho. O launcher e o instalador usam o visual azul com fundo `#1a1b26`, imagens e ícone do Cobblemon.
 
-Preferências ficam em `.cobbleverse-settings`, na pasta do jogo. A reinstalação preserva essas preferências e os mundos. Depois de instalar, a pasta extraída do instalador pode ser removida. Para testar somente a interface, digite **↑ ↑ ↓ ↓ ← → ← → B A Enter**, avance normalmente e clique **Testar launcher**; a faixa MODO VISUAL identifica a simulação.
+## Perfis e configurações
 
-O perfil local atende mundos locais e servidores que aceitam contas offline. O modpack 1.0.2 não contém o Essential. O login Microsoft real ainda depende do registro e da aprovação do aplicativo pelo responsável.
+O nome fica salvo como perfil e não pode ser editado acidentalmente. Use **Novo perfil** para criar outro e a lista **Perfil ativo** para trocar. O nome anteriormente salvo é importado com a mesma grafia. Cada nome pode ter seu próprio inventário e progresso em servidores.
+
+**Excluir** pede confirmação e remove somente o perfil salvo: mundos e arquivos do jogo são preservados. Depois de excluir o perfil ativo, selecione ou crie outro antes de jogar. Para voltar à identidade anterior, crie novamente exatamente o mesmo nome. Perfis não podem ser criados, trocados ou excluídos durante uma operação.
+
+A engrenagem no canto superior esquerdo abre configurações de Java e memória. A barra deslizante mostra MB, com marcações em 2048, 4096, 8192, 16384 e 32768 MB (2, 4, 8, 16 e 32 GB). Também há Java automático/personalizado, abertura da pasta do jogo e verificação de atualizações. O login Microsoft permanece desativado; o perfil local atende mundos locais e servidores que aceitam contas offline.
+
+O programa instalado fica em **Cobbleverse Launcher**; preferências ficam em `.cobbleverse-settings`. Reinstalar na mesma pasta preserva preferências e mundos. A atualização do modpack não substitui o programa launcher: para receber esta interface, execute o novo instalador.
 
 ## Atualizações do modpack
 
-O endereço estável já vem configurado:
+O canal oficial continua configurado:
 
 ```text
 https://github.com/lcomhpinheiro/pinheiro-s-cobbleverse/releases/latest/download/manifest.json
 ```
 
-Cada Release mais recente precisa incluir `manifest.json`. Os arquivos `f-*` e `b-*` são baixados e verificados automaticamente; não precisam ser baixados à mão. Arquivos inalterados podem ser reutilizados de versões anteriores. Por isso, mantenha os Releases antigos cujos arquivos ainda são referenciados.
+O modpack atual é o **1.0.3**, sem Essential e sem os cinco mods marcados como desativados. O instalador busca a versão atual pelo canal oficial. Não apague os releases antigos: arquivos inalterados podem ser reutilizados pelas atualizações. Saves não fazem parte do pacote; configurações pessoais alteradas são preservadas pela política `merge`.
 
-Os instaladores 1.4.0 recebem o modpack mais recente pelo canal acima. O modpack 1.0.2 remove o Essential e seus botões dos menus; não é necessário baixar outro instalador. Uma atualização somente de configurações não exige baixar os mods novamente. A política `merge` preserva alterações pessoais; `replace` substitui o arquivo inteiro; `seed` instala apenas se ele não existe. Saves não fazem parte da atualização.
-
-Uma atualização do modpack não substitui o programa launcher. Os links dos instaladores acima apontam para a versão específica e continuam válidos quando um novo modpack for publicado.
+Os links de instaladores acima são fixos e continuam funcionando quando outro modpack for publicado. O release do launcher não muda o canal de atualizações do modpack.
 
 ## Validação e ajuda
 
-**54 testes passaram no Linux e no Python de Windows via Wine.** Os dois pacotes compilados foram testados também copiando o runtime e o aplicativo para uma pasta nova e abrindo o launcher instalado. O modpack já foi executado até o menu principal no Linux. O teste de gameplay em Windows nativo ainda depende de validação externa. Veja [VALIDACAO.md](VALIDACAO.md) e [TESTE-WINDOWS.md](TESTE-WINDOWS.md).
+**63 testes passaram no Linux e 63 no Python de Windows via Wine.** Os pacotes foram testados copiando runtime e aplicativo para uma pasta nova e abrindo o launcher instalado. O EXE único também passou pelo teste de abertura via Wine, sem baixar o jogo. O teste de gameplay no Windows nativo continua pendente. Veja [VALIDACAO.md](VALIDACAO.md) e [TESTE-WINDOWS.md](TESTE-WINDOWS.md).
 
-Se houver falha, abra a engrenagem e use **Abrir pasta do jogo**. Os logs ficam em `logs/launcher-game.log` e `logs/latest.log`. Não compartilhe credenciais nem saves. A distribuição contém os programas compilados; a cópia privada de fontes do administrador não é publicada aqui.
+Para testar somente a interface, digite **↑ ↑ ↓ ↓ ← → ← → B A Enter**. A faixa MODO VISUAL confirma a simulação e as alterações de teste não são gravadas.
+
+Os logs do jogo ficam em `logs/launcher-game.log` e `logs/latest.log`. Abra a pasta pela engrenagem. Não compartilhe credenciais ou saves.
