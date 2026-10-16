@@ -26,6 +26,8 @@ O inventário do modpack é completo em cada versão, mas arquivos e pacotes ina
 
 ## Validação e ajuda
 
+A distribuição HTTPS foi validada com uma instalação limpa dos 1.926 arquivos, sem autenticação GitHub. Veja [VALIDACAO.md](VALIDACAO.md).
+
 Linux: execução até o menu principal. Windows: interface e instalação testadas sob Wine; a execução do jogo em Windows nativo ainda aguarda teste externo. Consulte [TESTE-WINDOWS.md](TESTE-WINDOWS.md).
 
 Se houver falha, o botão **Abrir pasta** mostra a instalação. Os logs ficam em `logs/launcher-game.log` e `logs/latest.log`. Não envie arquivos de contas nem saves ao relatar problemas.
